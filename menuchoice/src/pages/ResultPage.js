@@ -1,5 +1,7 @@
 import React from "react";
 import {Link} from 'react-router-dom';
+
+import "./Result.css";
 import styles from "./Result.module.css";
 
 
@@ -42,7 +44,7 @@ const btnStyle3={
 
 const ResultPage=()=>{
     return(
-        <div>
+        <div className="Result">
             <div className="back" style={{textAlign: 'left'}}><IoIosArrowBack size="30" color="white"/></div>
             <h1 className={styles.title}>당신의 선택 결과</h1>
 
