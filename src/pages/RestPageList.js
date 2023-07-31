@@ -4,7 +4,7 @@ import { IoIosArrowBack } from "react-icons/io";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./Result.css";
+import "./RestPageList.css";
 import styles from "./Result.module.css";
 
 const restaurantData = [
@@ -68,12 +68,12 @@ const RestPageList = () => {
   };
 
   return (
-    <div>
-      <div className="Result" style={{ textAlign: 'center' }}>
+    <div className="RestPageList"> {/* Add the "RestPageList" class to the outermost div */}
+      <div style={{ textAlign: 'center' }}>
         <div className="back" style={{ textAlign: 'left' }}><IoIosArrowBack size="30" color="white" /></div>
         <button className={styles.btn_shadow} style={btnStyle3}>가게 리스트</button>
         <hr />
-
+        
         {/* Select box for filtering */}
         <select value={selectedType} onChange={handleSelectChange}>
           <option value="">전체</option>
